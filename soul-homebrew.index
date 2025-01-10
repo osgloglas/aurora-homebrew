@@ -5,10 +5,10 @@
 		<description>Homebrew content form me</description>
 		<author url="https://github.com/osgloglas/aurora-homebrew">soulsandstormer</author>
 		<update version="1.0">
-			<file name="soul-homebrew.index" url="https://raw.githubusercontent.com/osgloglas/soul-homebrew.index" />
+			<file name="soul-homebrew.index" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/soul-homebrew.index" />
 		</update>
 	</info>
 	<files>
-		<file name="internal.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/race-cannon-cart-warforged.xml" />
+		<file name="race-cannon-cart-warforged.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/race-cannon-cart-warforged.xml" />
 	</files>
 </index>
