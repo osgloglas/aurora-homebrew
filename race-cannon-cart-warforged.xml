@@ -5,7 +5,7 @@
 			<file name="race-cannon-cart-warforged.xml" url="" />
 		</update>
 	</info>	
-	<element name="Cannon Cart Warforged" type="Race" source="Eberron User Variant" id="ID_USER_RACE_WARFORGED">
+	<element name="Cannon Cart Warforged" type="Race" source="souls" id="ID_USER_RACE_WARFORGED">
 		<description>
 			<p>The warforged were built to fight in the Last War. While the first warforged were mindless automatons, House Cannith devoted vast resources to improving these steel soldiers. An unexpected breakthrough produced sapient soldiers, giving rise to what some have only grudgingly accepted as a new species. Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond war. A warforged can be a steadfast ally, a cold-hearted killer, or a visionary in search of meaning.</p>
 			<h4>LIVING STEEL AND STONE</h4>
@@ -14,7 +14,6 @@
 			<h4>WARFORGED PERSONALITY</h4>
 			<p>The warforged were built to serve and to fight. For most of their existence, warforged had a clearly defined function and were encouraged to focus purely on that role. The Treaty of Thronehold gave them freedom, but many still struggle both to find a place in the post-war world and to relate to the creatures who created them.</p>
 			<p class="indent">The typical warforged shows little emotion. Many warforged embrace a concrete purpose-such as protecting allies, completing a contract, or exploring a land-and embrace this task as they once did war. However, there are warforged who delight in exploring their feelings, their freedom, and their relationships with others. Most warforged have no interest in religion, but some embrace faith and mysticism, seeking higher purpose and deeper meaning.</p>
-			<p class="indent">The typical warforged has a sexless body shape. Some warforged ignore the concept of gender entirely, while others adopt a gender identity.</p>
 			<p class="indent">The more a warforged develops its individuality, the more likely it is to modify its body, seeking out an artificer to customize the look of its face, limbs, and plating.</p>
 			<p class="indent"></p>
 			<h4>WARFORGED TRAITS</h4>
@@ -23,7 +22,7 @@
 			<p class="indent"><strong><em>Age.</em></strong> You are a mystery to what age you may be, and are immune to magical aging effects.</p>
 			<p class="indent"><strong><em>Alignment.</em></strong> Most warforged take comfort in order and discipline, tending toward law and neutrality. But some have absorbed the morality, or lack thereof, of the beings with which they served.</p>
 			<p class="indent"><strong><em>Size.</em></strong> Your size is Medium.</p>
-			<p style="margin-left:10px;padding-bottom:10px;">Height is 4-5ft. tall<br/>Weight is between 250-300 pounds</p>
+			<p style="margin-left:10px;padding-bottom:10px;">Height is 4-5ft. tall<br/>Weight is between 400-600 pounds</p>
 			<p class="indent"><strong><em>Speed.</em></strong> Your base rolling speed is 20ft. However, when rolling downhill you can roll at a speed of 40ft.</p>
 			<p class="indent"><strong><em>Constructed Resilience.</em></strong> You were created to have remarkable fortitude, represented by the following benefits:</p>
 			<ul>
@@ -154,7 +153,7 @@
 			<select type="Proficiency" name="Tool Proficiency, Specialized Design" supports="Tool" />
 		</rules>
 	</element>
-	<element name="Rolling" type="Racial Trait" source="Eberron User Variant" id="ID_USER_RACIAL_TRAIT_CANNON_CART_ROLLING">
+	<element name="Rolling" type="Racial Trait" source="souls" id="ID_USER_RACIAL_TRAIT_CANNON_CART_ROLLING">
 		<description>
 			<p>While rolling downhill, your speed becomes 40ft.</p>
 		</description>
@@ -162,7 +161,7 @@
 			<description>While rolling downhill, your speed becomes 40ft.</description>
 		</sheet>
 	</element>
-	<element name="Cannonball Recharge" type="Racial Trait" source="Eberron User Variant" id="ID_USER_RACIAL_TRAIT_CANNON_CART_CANNONBALL_RECHARGE">
+	<element name="Cannonball Recharge" type="Racial Trait" source="souls" id="ID_USER_RACIAL_TRAIT_CANNON_CART_CANNONBALL_RECHARGE">
 		<description>
 			<p>You have 12 cannonballs. Used cannonballs recharge when you finish a long rest.</p>
 		</description>
@@ -170,7 +169,7 @@
 			<description>You have 12 cannonballs. Used cannonballs recharge when you finish a long rest.</description>
 		</sheet>
 	</element>
-	<element name="Engine" type="Racial Trait" source="Eberron User Variant" id="ID_USER_RACIAL_TRAIT_CANNON_CART_ENGINE">
+	<element name="Engine" type="Racial Trait" source="souls" id="ID_USER_RACIAL_TRAIT_CANNON_CART_ENGINE">
 		<description>
 			<p>When you fully die, your engine explodes, dealing 3d6 fire damage. This increases to 3d8 at 6th level, 3d10 at 11th level, and 3d12 at 16th level. You can still be repaired, however you would no longer have a soul. You can however, be revived through magic to restore the soul before being repaired in order to maintain your soul. Magic that attempts to raise the dead cannot work.</p>
 		</description>
@@ -178,7 +177,7 @@
 			<description>When you fully die, your engine explodes, dealing 3d6 fire damage. This increases to 3d8 at 6th level, 3d10 at 11th level, and 3d12 at 16th level.</description>
 		</sheet>
 	</element>
-	<element name="Repairable" type="Racial Trait" source="Eberron User Variant" id="ID_USER_RACIAL_TRAIT_CANNON_CART_REPAIRABLE">
+	<element name="Repairable" type="Racial Trait" source="souls" id="ID_USER_RACIAL_TRAIT_CANNON_CART_REPAIRABLE">
 		<description>
 			<p>A DC 10 tinker's tools check restores 1 hit point for each point rolled over the DC. You cannot be healed by healing magic unless it is produced by a celestial or yourself.</p>
 		</description>
@@ -186,7 +185,7 @@
 			<description>A DC 10 tinker's tools check restores 1 hit point for each point rolled over the DC. You cannot be healed by healing magic unless it is produced by a celestial or yourself.</description>
 		</sheet>
 	</element>
-	<element name="Rolling Charge" type="Class Feature" source="Eberron User Variant" id="ID_USER_RACIAL_TRAIT_CANNON_CART_ROLLING_CHARGE">
+	<element name="Rolling Charge" type="Class Feature" source="souls" id="ID_USER_RACIAL_TRAIT_CANNON_CART_ROLLING_CHARGE">
 		<description>
 			<p>If you roll at least 20 feet straight toward a target and then hit it with a slam attack on the same turn, the target takes an extra 1d6 bludgeoning damage. This increases by 1d6 every other level. If the target is a creature, it must succeed on a Strength saving throw with a DC equal to 8 + your strength modifier + your proficiency bonus or be knocked prone.</p>
 		</description>
@@ -199,7 +198,7 @@
 			<stat name="strength:dc" value="strength:modifier" />
 		</rules>
 	</element>
-	<element name="Slam" type="Class Feature" source="Eberron User Variant" id="ID_USER_RACIAL_TRAIT_CANNON_CART_SLAM">
+	<element name="Slam" type="Class Feature" source="souls" id="ID_USER_RACIAL_TRAIT_CANNON_CART_SLAM">
 		<description>
 			<p><em>Melee Weapon Attack: </em>proficiency bonus + strength modifier, one target. <em>Hit: </em>1d6 + strength modifier bludgeoning damage. This increases to 1d8 at 6th level, 1d10 at 11th level, and 1d12 at 16th level.</p>
 		</description>
@@ -216,7 +215,7 @@
 			<stat name="slam:dice" value="2" level="16" />
 		</rules>
 	</element>
-	<element name="Cannon" type="Class Feature" source="Eberron User Variant" id="ID_USER_RACIAL_TRAIT_CANNON_CART_CANNON">
+	<element name="Cannon" type="Class Feature" source="souls" id="ID_USER_RACIAL_TRAIT_CANNON_CART_CANNON">
 		<description>
 			<p><em>Ranged Weapon Attack: </em>proficiency bonus + dexterity modifier to hit, range 200/600 ft., one target. Refer to the chart below for the damage dice on level.</p>
 			<ul>
