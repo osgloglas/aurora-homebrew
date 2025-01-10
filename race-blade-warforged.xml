@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.1">
 			<file name="race-blade-warforged.xml" url="" />
 		</update>
 	</info>	
-	<element name="Blade Warforged" type="Race" source="souls" id="ID_USER_RACE_WARFORGED">
+	<element name="Blade Warforged" type="Race" source="souls" id="ID_USER_RACE_BLADE_WARFORGED">
 		<description>
 			<p>The warforged were built to fight in the Last War. While the first warforged were mindless automatons, House Cannith devoted vast resources to improving these steel soldiers. An unexpected breakthrough produced sapient soldiers, giving rise to what some have only grudgingly accepted as a new species. Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond war. A warforged can be a steadfast ally, a cold-hearted killer, or a visionary in search of meaning.</p>
 			<h4>LIVING STEEL AND STONE</h4>
