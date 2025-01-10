@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<update version="0.5.0">
+			<file name="astralsorcerer-resources.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Rituals" type="Spell" source="souls" id="ID_USER_SPELL_RITUALS">
+		<supports>Astral Sorcerer</supports>
+		<description>
+			<p>AEVITAS: When allies are within the 10ft radius of this ritual, they are healed on your turn for 4d4 + 4 damage.</p>
+			<p class="indent">ARMARA: Non-allies are pushed out of the radius of this ritual which has a radius of 15ft. Creatures attacking the ritual have disadvantage on the attack.</p>
+			<p class="indent">BOOTES: This causes animals to age without killing them, shedding them of their resources within 15ft.</p>
+			<p class="indent">DISCIDIA: This ritual causes non-allies to take damage while they are within the radius of 15ft. The damage is 3d8 psychic when non-allies begin their turn inside the radius.</p>
+			<p class="indent">EVORSIO: This ritual will cause mass destruction, destroying aything within a 20ft radius over time. This ritual will not hurt players, however it will break anything constructed like buildings or natural terrain. The ritual destroys from top to bottom, taking 5 turns to empty out its entire sphere of influence.</p>
+			<p class="indent">HOROLOGIUM: This ritual makes machines work twice their normal speed, causing no additional age or wear. If a construct is inside this radius, they are considered hasted. This ritual has a 15ft radius.</p>
+			<p class="indent">LUCERNA: This ritual functions the same as locate creature or locate object, and the pedestal must be given an item along with the crystal in order to function.</p>
+			<p class="indent">OCTANS: This ritual allows fishing to be done automatically within a 20ft radius. As long as you are in the area, it will function.</p>
+			<p class="indent">VICIO: This ritual allows all creatures within 20ft the ability to increase all movement speed by 15ft, as well as double their high jump.</p>
+		</description>
+		<setters>
+			<set name="keywords">rituals</set>
+			<set name="level">7</set>
+			<set name="school">none</set>
+			<set name="time">specified</set>
+			<set name="duration">specified</set>
+			<set name="range">specified</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ritual Augments" type="Spell" source="souls" id="ID_USER_SPELL_RITUAL_AUGMENTS">
+		<supports>Astral Sorcerer</supports>
+		<description>
+			<p>AEVITAS: This ritual causes a creature inside its 10ft radius to wither with disease. Every 10 minutes a creature spends inside the radius of this ritual, they will gain a level of exhaustion until death.</p>
+			<p class="indent">ARMARA: This ritual causes enemies to be hasted within the radius, which is 15ft.</p>
+			<p class="indent">BOOTES: This ritual instantly kills any animal or beast CR 2 and below within 15ft.</p>
+			<p class="indent">DISCIDIA: This ritual damages anything in its wake, dealing 4d4+4 psychic damage to any creature within 15ft every turn.</p>
+			<p class="indent">EVORSIO: This ritual works in opposition to its normal counterpart. The 20ft radius sphere of destructioninstead starts terraforming, and creating rock and stone from bottom to top in 5 turns.</p>
+			<p class="indent">HOROLOGIUM: This ritual completely freezes enemies in space and time if they are fully inside the 15ft radius. This will also halt all machines and preserve them in time.</p>
+			<p class="indent">LUCERNA: This ritual slows time during the night, causing those inside to experience everything twice as slow around them in a 10ft radius.</p>
+			<p class="indent">OCTANS: This ritual summons water in a 20ft radius sphere around the ritual pedestal instantly.</p>
+			<p class="indent">VICIO: This ritual gives enemies within its 20ft radius the effect of the slow spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">rituals</set>
+			<set name="level">7</set>
+			<set name="school">none</set>
+			<set name="time">specified</set>
+			<set name="duration">specified</set>
+			<set name="range">specified</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Starlight Charge Abilities" type="Spell" source="User" id="ID_USER_SPELL_STARLIGHT_CHARGE_ABILITIES">
+		<supports>Astral Sorcerer</supports>
+		<description>
+			<p>Elemental Swap (2 charges): You can change the damage type of your next attack.</p>
+			<p class="indent">Elemental Swap (2 charges): This functions as the confusion spell on an enemy.</p>
+			<p class="indent">Elemental Swap (2 charges): This allows you to slam a star into the ground from the sky, dealing 3d8 radiant damage on a failed Dexterity save equal to your Astral Sorcerer DC. This has a radius of 20ft.</p>
+			<p class="indent">Elemental Swap (2 charges): You channel the cosmos close to you, creating a barrier that cannot allow projectiles to pass through until the end of your next turn. Melee attacks against you have disadvantage.</p>
+			<p class="indent">Elemental Swap (2 charges): This is a much bigger explosion than your blasting star, dealing 5d10 fire damage on a failed Dexterity save equal to your Astral Sorcerer DC. This has a radius of 30ft.</p>
+		</description>
+		<setters>
+			<set name="keywords">rituals</set>
+			<set name="level">7</set>
+			<set name="school">none</set>
+			<set name="time">specified</set>
+			<set name="duration">specified</set>
+			<set name="range">specified</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

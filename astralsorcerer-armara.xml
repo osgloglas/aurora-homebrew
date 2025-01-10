@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="astralsorcerer-armara.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Armara" type="Archetype" source="souls" id="ID_USER_ARCHETYPE_ASTRAL_SORCERER_ARMARA">
+		<supports>Attunement</supports>
+		<description>
+			<p>Armara is the constellation of defense, granting the user a bump in their armor class, as well as giving themselves protection from the elements.</p>
+			<div element="ID_USER_ARCHETYPE_FEATURE_ARMARA_MAXIMUM_DEFENSE" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_ARMARA_FALLING_MASTER" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_ARMARA_DODGE" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_ARMARA_BLESSING_OF_PHOENIX" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_ARMARA_HIGH_RISK_HIGH_REWARD" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_ARMARA_MAXIMUM_DEFENSE" level="3" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_ARMARA_FALLING_MASTER" level="6" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_ARMARA_DODGE" level="9" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_ARMARA_BLESSING_OF_PHOENIX" level="13" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_ARMARA_HIGH_RISK_HIGH_REWARD" level="17" />
+		</rules>
+	</element>
+	<element name="Maximum Defense" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_ARMARA_MAXIMUM_DEFENSE">
+		<description>
+			<p>When you choose this attunement at 3rd level, from now on your armor class is buffed by +2, as if you are carrying an invisible shield.</p>
+		</description>
+		<sheet>
+			<description>From now on your armor class is buffed by +2, as if you are carrying an invisible shield.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:armara" value="2" />
+			<stat name="ac:calculation" value="ac:armara" bonus="base" />
+		</rules>
+	</element>
+	<element name="Falling Master" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_ARMARA_FALLING_MASTER">
+		<description>
+			<p>Starting at 6th level, you can reduce the damage you take from falling by 5 times your Astral Sorcerer level as a reaction.</p>
+		</description>
+		<sheet action = "Reaction">
+			<description>You can reduce fall damage by 5 times your Astral Sorcerer level.</description>
+		</sheet>
+	</element>
+	<element name="Dodge" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_ARMARA_DODGE">
+		<description>
+			<p>Starting at 9th level, you may take the dodge action as a bonus action.</p>
+		</description>
+		<sheet action = "Bonus Action">
+			<description>You may take the dodge action as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Blessing of Phoenix" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_ARMARA_BLESSING_OF_PHOENIX">
+		<description>
+			<p>Starting at 13th level, if you take more than half your HP in damage, you are granted a second life. If you are to go unconcious in the next minute, you jump back up with 8 hit points.</p>
+		</description>
+		<sheet>
+			<description>If you take more than half your HP in damage, you are granted a second life. If you are to go unconcious in the next minute, you jump back up with 8 hit points.</description>
+		</sheet>
+	</element>
+	<element name="High Risk High Reward" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_ARMARA_HIGH_RISK_HIGH_REWARD">
+		<description>
+			<p>Starting at 17th level, the lower your armor class, the more resistances you are able to obtain with your body.</p>
+			<table>
+				<thead>
+					<tr><td class="col-40 left">Resistance Granted</td><td>AC Value</td></tr>
+				</thead>
+				<tr><td class="left">Non-Magical</td><td>20</td></tr>
+				<tr><td class="left">Fire</td><td>19</td></tr>
+				<tr><td class="left">Cold</td><td>18</td></tr>
+				<tr><td class="left">Lightning</td><td>17</td></tr>
+				<tr><td class="left">Thunder</td><td>16</td></tr>
+				<tr><td class="left">Acid</td><td>15</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>The lower your armor class, the more resistances you are able to obtain with your body. Refer to the table in your attunement description.</description>
+		</sheet>
+	</element>
+</elements>

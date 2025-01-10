@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="astralsorcerer-aevitas.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Aevitas" type="Archetype" source="souls" id="ID_USER_ARCHETYPE_ASTRAL_SORCERER_AEVITAS">
+		<supports>Attunement</supports>
+		<description>
+			<p>Aevitas is the constellation of life, granting the user a bump in their health, as well as helping their surroundings grow plentiful.</p>
+			<div element="ID_USER_ARCHETYPE_FEATURE_AEVITAS_MAXIMUM_LIFE" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_AEVITAS_GROWABILITY" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_AEVITAS_MENDING" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_AEVITAS_EXTENDED_REACH" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_AEVITAS_PROTECTORS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_AEVITAS_MAXIMUM_LIFE" level="3" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_AEVITAS_GROWABILITY" level="6" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_AEVITAS_MENDING" level="9" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_AEVITAS_EXTENDED_REACH" level="13" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_AEVITAS_PROTECTORS" level="17" />
+		</rules>
+	</element>
+	<element name="Maximum Life" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_AEVITAS_MAXIMUM_LIFE">
+		<description>
+			<p>When you choose this attunement at 3rd level, from now on each level up your health is maximized, meaning you take max HP on each level up.</p>
+		</description>
+		<sheet>
+			<description>From now on each level up your health is maximized, meaning you take max HP on each level up.</description>
+		</sheet>
+	</element>
+	<element name="Growability" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_AEVITAS_GROWABILITY">
+		<description>
+			<p>You allow plants around you to grow and bloom. You also gain access to the druidcraft cantrip.</p>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" level="6" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Mending" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_AEVITAS_MENDING">
+		<description>
+			<p>Starting at 9th level, you can cast mending at will, and your equipment will mend itself if it breaks.</p>
+		</description>
+		<sheet>
+			<description>You can cast mending at will, and your equipment will mend itself if it breaks.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" level="9" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Extended Reach" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_AEVITAS_EXTENDED_REACH">
+		<description>
+			<p>Starting at 13th level, starlight extends your melee range 5ft. This happens again at 17th level, making your total range 15ft.</p>
+		</description>
+		<sheet>
+			<description>Your melee range is now {{melee:range}} ft.</description>
+		</sheet>
+		<rules>
+			<stat name="melee:range" value="10" />
+			<stat name="melee:range" value="5" level="17" />
+		</rules>
+	</element>
+	<element name="Protectors" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_AEVITAS_PROTECTORS">
+		<description>
+			<p>Starting at 17th level, each time you take damage, a flare is summoned that will help you deal additional damage to your attacker. On your turn, you may deal an extra 1d8 damage per flare to the target with a melee attack. There is a maximum of three flares and they disappear after a turn of non-use. This can stack with the Bootes Mantle Attunement.</p>
+		</description>
+		<sheet>
+			<description>Each time you take damage, a flare is summoned that will help you deal additional damage to your attacker. On your turn, you may deal an extra 1d8 damage per flare to the target with a melee attack. There is a maximum of three flares and they disappear after a turn of non-use. This can stack with the Bootes Mantle Attunement</description>
+		</sheet>
+	</element>
+</elements>

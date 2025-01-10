@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Astral Sorcerer</name>
+		<description>A homebrewed class based on astral sorcery.</description>
+		<author url="https://docs.google.com/document/d/1eJbCnWQ_6S4QpgQEDr6uTdqc3KWcdKOCHRPq0xJ2ATo/edit">ME</author>
+		<update version= "0.0">
+			<file name="class-astralsorcerer.xml" url="https://docs.google.com/document/d/1eJbCnWQ_6S4QpgQEDr6uTdqc3KWcdKOCHRPq0xJ2ATo/edit" />
+		</update>
+	</info>
+
+	<element name="Astral Sorcerer" type="Class" source="souls" id="ID_USER_CLASS_ASTRALSORCERER">
+		<description>
+			<h4>HISTORY</h4>
+			<p>Astral Sorcerers derive their magic from the stars. They can spend decades studying the sky and stars, channeling their power from them. Some learn quicker than others, but an Astral Sorcerer is not complete until their vision has expanded to the maximum. Each Astral Sorcerer carries a tome with them, which hold their constellation papers and knowledge of their vision. It also serves as a guide for their journey.</p>
+			<p class="indent">Students do not learn from academies or institutions, as Astral Sorcerers are not well known in many parts. Some intend to learn other magic and discover their own vision of the stars. Astral Sorcerers are special in the sense the that they can also rely on the stars on direction, and for time. Very late level students who have almost maximized their vision can sense the stars at any time of day, and will be able to direct themselves as such.</p>
+			<h4>SCHOOLING</h4>
+			<p>When starting out as an Astral Sorcerer, a student begins at the basics. A student will read their tome and head out into the wild in search of papers from the ancients to learn more about the constellations. A student will go out into the wild for years, in some cases. Teachers do not need to teach these students, as the astral tomes give students new notes inside to further understand their vision and what they can do.</p>
+			<p class="indent">Vision is very important in the world of Astral Sorcerers. Vision means enhanced ability, enhanced self, and enhanced mind. It also means a great connection with the stars in the night sky and celestials up above. An Astral Sorcerer typically wanders a path of great responsibility, as this is a great power. When all constellations are added to a student’s vision, they have reached maximum expansion, becoming close to an equal amongst celestials. Maximum vision grants more skills, as well as more powerful tools and weapons available to the student. At this point, the student will graduate from the Astral Academy, and will move on to use their vision in whichever way they would like. Some even become celestials, helping with the world's problems.</p>
+            <h4>Technique</h4>
+			<p>Many Astral Sorcerers are taken to be magic practitioners. This is only partially true, as their powers come from the very heavens. The stars carry their own magic through starlight, and starlight is channeled through Astral Sorcerers in order to use their power. It is also why it is hard to make progress with training during the day. Many take the path of melee combat to achieve their goals, but some take a more gentle path, helping their friends to victory. Not all power has to come from direct physical means.</p>
+			<h5>HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per astral sorcerer level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per astral sorcerer level after 1st</li>
+            </ul>
+            <h5>PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> No armor, instead you are given a robe. This is 10 + your DEX modifier.</li>
+                <li><strong>Weapons:</strong> Simple or martial weapon</li>
+                <li><strong>Tools:</strong> Smith's Tools, Jewler's Kit, Astrologist's Tools</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Wisdom, Strength</li>
+                <li><strong>Skills:</strong> Choose two skills from Arcana, History, Insight, Intimidation, Pursuasion, and Survival</li>
+            </ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>your robe</li>
+				<li>a simple or martial weapon</li>
+				<li><i>(a)</i> a scholar's pack or <i>(b)</i> an explorer's pack</li>
+				<li>a piece of jewelry</li>
+				<li>astral tome</li>
+				<li>clock</li>
+			</ul>
+			<h5 class="caption">THE ASTRAL SORCERER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-40 left">Features</td><td>Vision</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Clock, Astral Tome, Vision</td><td>5 bright</td></tr>
+				<tr><td> 2nd</td><td class="left">Star Thrust</td><td>5 bright</td></tr>
+				<tr><td> 3rd</td><td class="left">Attunement</td><td>5 bright</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement, Shifting Space</td><td>5 bright</td></tr>
+				<tr><td> 5th</td><td class="left">Extra Attack</td><td>5 bright</td></tr>
+				<tr><td> 6th</td><td class="left">Starmetal, Attunement Feature</td><td>5 bright</td></tr>
+				<tr><td> 7th</td><td class="left">Ritual Pedestal, Vision Expansion</td><td>5 bright, 7 dim</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>5 bright, 7 dim</td></tr>
+				<tr><td> 9th</td><td class="left">Attunement Feature</td><td>5 bright, 7 dim</td></tr>
+				<tr><td>10th</td><td class="left">Nebulae</td><td>5 bright, 7 dim</td></tr>
+				<tr><td>11th</td><td class="left">Mantle of the Stars</td><td>5 bright, 7 dim</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>5 bright, 7 dim</td></tr>
+				<tr><td>13th</td><td class="left">Celestial Gateway, Attunement Feature</td><td>5 bright, 7 dim</td></tr>
+				<tr><td>14th</td><td class="left">Starshatter</td><td>5 bright, 7 dim</td></tr>
+				<tr><td>15th</td><td class="left">Faint Stars, Vision Expansion</td><td>5 bright, 7 dim, 4 faint</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>5 bright, 7 dim, 4 faint</td></tr>
+				<tr><td>17th</td><td class="left">Forever Starlight, Attunement Feature</td><td>5 bright, 7 dim, 4 faint</td></tr>
+				<tr><td>18th</td><td class="left">—</td><td>5 bright, 7 dim, 4 faint</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>5 bright, 7 dim, 4 faint</td></tr>
+				<tr><td>20th</td><td class="left">Pillar of Death</td><td>5 bright, 7 dim, 4 faint</td></tr>
+			</table>
+
+			<h4>SAVE DC</h4>
+			<p>Your Astral Sorcerer DC is as follows unless specified otherwise:</p>
+			<p class = "indent">**8 + Proficiency Bonus + Wisdom Modifier**</p>
+			<p class = "indent">Spell attack modifier = **Proficiency Bonus + Wisdom Modifier**</p>
+
+			<h4>CLOCK AND TOME</h4>
+			<p>Astral Sorcerers begin their journey with a few tools to start out with. A clock is important, so you can always monitor the time of day. You also get an Astral Tome, not only to track your journey's progress, but to also guide you on this long journey.</p>
+
+			<h4>VISION</h4>
+			<p>Starting out at 1st level, you can only see the bright constellations of the night sky. At 7th level, your knowledge of the constellations expand, allowing you to see the dim constellations. Your vision expands once again at 15th level, allowing you to see the faint constellations.</p>
+			<p class = "indent">The bright constellations consist of Aevitas, Armara, Discidia, Evorsio, and Vicio. The dim constellations consist of Bootes, Fornax, Horologium, Lucerna, Mineralis, Octans, and Pelotrio. Finally, the faint constellations consist of Alcara, Gelu, Ulteria, and Vorux.</p>
+
+			<h4>STAR THRUST</h4>
+			<p>At 2nd level, you can channel starlight from the sky as a bonus action and wrap it around you to hurl yourself 15ft in a straight line with a brilliant flash of light. This movement does not provoke opportunity attacks. All creatures within 5 feet of the line must succeed on a Constitution saving throw equal to your Astral Sorcerer DC, or be blinded until the end of their next turn.</p>
+			<p class = "indent">During or after this movement you can make an attack. You can use this ability once per short rest. At 5th, 10th, 15th, and 20th levels, the maximum distance you can cover increases by 5 feet.</p>
+
+			<h4>CONSTELLATIONS AND ATTUNEMENT</h4>
+			<p>Constellations are a complex concept to understand as an Astral Sorcerer. You must spend time observing the night sky in order to understand and use the power the stars grant. At 3rd level, you are able to choose a bright constellation to attune to, allowing you to expand your skillset into specialized magic and abilities. Your attunement will grant abilities at 6th, 9th, 13th, and 17th level.</p>
+
+			<h4>ABILITY SCORE IMPROVEMENT</h4>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+
+			<h4>SHIFTING SPACE</h4>
+			<p>At 4th level, you gain the ability once per long rest to use the stars to mask you in a time of need. This gives you the ability to place mirror image upon yourself as an action.</p>
+
+			<h4>EXTRA ATTACK</h4>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+
+			<h4>STARMETAL</h4>
+			<p>At 6th level, you learn the concept of starmetal. Starmetal is an extremely special substance that is strengthened by the stars themselves. Depicted on the right, starmetal is a translucent bright blue crystalline substance, with small stars twinkling inside of it. By allowing a weapon of your choice to be bathed in starlight for an hour, that weapon now takes on this starry metal infused by the stars, rendering it magical. This can only be done to one weapon at a time.</p>
+
+			<h4>RITUALS</h4>
+			<p>Starting at 7th level, you learn how to channel rituals. Gathering the essence of a constellation into a crystal in order to focus it is no easy task, however, once complete, can grant many abilities to not only yourself, but beings around you. To imbue a crystal with a constellation, the crystal must be exposed to starlight for an hour. You may have as many crystals as you wish, however an attuned crystal cannot be reattuned.</p>
+			<p class = "indent">Rituals take attuned crystals in order to function. Once the ritual is started, it can be stopped when you wish, but you should be aware what each constellation will grant from a ritual. Rituals also must be placed, and take an action to deploy. Rituals can also be destroyed by creatures if they wish to attack it. The ritual will have a total healthpool of 25 hit points, and once destroyed, the crystal can be retrieved but the pedestal must be remade. The pedestal is made of any wood infused by starlight for an hour, and is about a 6 inch diameter cylinder. The crystal must be reattuned after the ritual being destroyed as well. A minimum requirement for the crystal is that it must be worth at least 200 gold pieces.</p>
+			
+			<h4>VISION EXPANSION</h4>
+			<p>Also starting at 7th level, your vision begins to expand to the dim constellations, which consist of Bootes, Fornax, Horologium, Lucerna, Mineralis, Octans, and Pelotrio. This vision expanse grants you a new boon to aid you on your journey:</p>
+
+			<h5>MIND CLEANSE</h5>
+			<p>You obtain upmost clarity. Your mind is reinforced with the celestials behind you, granting you advantage on saving throws against charm effects.</p>
+
+			<h4>NEBULAE</h4>
+			<p>At 10th level, you are able to focus on your inner self to achieve the feeling and emotion of nebulae floating through deep space. Through this connection, you are now able to use the summon celestial spell once per long rest.</p>
+			
+			<h4>MANTLE OF THE STARS</h4>
+			<p>At 11th level, each constellation grants an ability to your robe when you advance to learn the mantle of stars. The mantle is considered one of the highest statures amongst Astral Sorcerers, and those who have earned them should be treated with respect, as it is no easy feat.</p>
+			<p class = "indent">The Mantle of the Stars also grants the wearer a +2 bonus to their armor class, giving them more protection. Once your mantle is attuned, it cannot be attuned again.</p>
+
+			<h4>CELESTIAL GATEWAYS</h4>
+			<p>At 13th level, you unlock the ability to use celestial gateways. These are devices used to teleport to different places in the world, although the gateway will need to be secured into the ground in these locations. Similar to teleportation circles, These can function as anchors to your gateways. They can be dispelled, and anyone has access to them, so place them carefully.</p>
+			<p class = "indent">Celestial gateways take 10 minutes to fully deploy, as you have to channel the stars to manifest a physical form of the gateway. Gateways have a range of 100 miles, and will show their destination through a label you magically place on them. No indication of nearby gateways will appear if you place one more than 100 miles away. Two gateways must also be placed to teleport between them. You may only place one gateway per long rest.</p>
+
+			<h4>STARSHATTER</h4>
+			<p>Beginning at 14th level, you gain the ability to begin to channel the stars and overwhelming cosmos into others minds. Once per short rest, you may deal a direct 4d6 psychic damage to someone’s mind after an attack using a bonus action.</p>
+
+			<h4>FAINT STARS</h4>
+			<p>At 15th level, your vision expands to see the furthest constellations of the night sky. Due to your expanding vision, you are able to use some extra augments during your rituals. These are further described on page 7. With your vision expansion, you obtain an extra boon as well as your graduation from the Astral Sorcerer Academy:</p>
+
+			<h5>Blasting Star</h5>
+			<p>Twice per long rest, as a bonus action, you may slam a star into the ground from the sky, dealing 6d8 radiant damage on a failed Dexterity save equal to your Astral Sorcerer DC, or half as much on a success. This has a radius of 20ft., and a range of 120ft.</p>
+
+			<h4>FOREVER STARLIGHT</h4>
+			<p>At 17th level, you are seen by the stars and celestials alike as almost equal. Due to this, they provide more power to you during the day, meaning your mantle of stars can always function as if it were night.</p>
+
+			<h4>PILLAR OF DEATH</h4>
+			<p>You obtain your final ascension at level 20. Now a vessel for mass destruction with your superior techniques, the stars grant you a final power. When you use this ability, you may no longer move on your turn, but summon a 10ft wide pillar of light that is channeled from the heavens as your eyes glow white. You can summon this pillar 60ft from you.</p>
+			<p class = "indent">This pillar causes anyone inside of it to have half movement, and when a creature enters the area for the first time, or starts its turn in the pillar, it must make a Wisdom saving throw, equal to your Astral Sorcerer DC. On a failed save, a creature takes 8d10 radiant damage. On a successful save, a creature will take half as much damage.</p>
+			<p class = "indent">The pillar lasts for one minute, and can only be moved in straight lines up to 15ft. This pillar also takes up your <em>entire</em> turn, meaning you no longer use movement, actions, bonus actions, or reactions. This pillar also recharges on a long rest.</p>
+
+			<h3>CONSTELLATIONS FOR ATTUNEMENT</h3>
+
+			<h4>AEVITAS</h4>
+			<p>Aevitas is the constellation of life, granting the user a bump in their health, as well as helping their surroundings grow plentiful.</p>
+			<h5>MAXIMUM LIFE</h5>
+			<p>When you choose this attunement at 3rd level, from now on each level up your health is maximized, meaning you take max HP on each level up.</p>
+			<h5>GROWABILITY</h5>
+			<p>Starting at 6th level, you allow plants around you to grow and bloom. You also gain access to the druidcraft cantrip.</p>
+			<h5>MENDING</h5>
+			<p>Starting at 9th level, you can cast mending at will, and your equipment will mend itself if it breaks.</p>
+			<h5>EXTENDED REACH</h5>
+			<p>Starting at 13th level, starlight extends your melee range 5ft. This happens again at 17th level, making your total range 15ft.</p>
+			<h5>PROTECTORS</h5>
+			<p>Starting at 17th level, each time you take damage, a flare is summoned that will help you deal additional damage to your attacker. On your turn, you may deal an extra 1d8 damage per flare to the target with a melee attack. There is a maximum of three flares and they disappear after a turn of non-use. This can stack with the Bootes Mantle Attunement.</p>
+
+			<h4>ARMARA</h4>
+			<p>Armara is the constellation of defense, granting the user a bump in their armor class, as well as giving themselves protection from the elements.</p>
+			<h5>MAXIMUM DEFENSE</h5>
+			<p>When you choose this attunement at 3rd level, from now on your armor class is buffed by +2, as if you are carrying an invisible shield.</p>
+			<h5>FALLING MASTER</h5>
+			<p>Starting at 6th level, you can reduce the damage you take from falling by 5 times your Astral Sorcerer level as a reaction.</p>
+			<h5>DODGE</h5>
+			<p>Starting at 9th level, you may take the dodge action as a bonus action.</p>
+			<h5>BLESSING OF PHOENIX</h5>
+			<p>Starting at 13th level, if you take more than half your HP in damage, you are granted a second life. If you are to go unconcious in the next minute, you jump back up with 8 hit points.</p>
+			<h5>HIGH RISK HIGH REWARD</h5>
+			<p>Starting at 17th level, the lower your armor class, the more resistances you are able to obtain with your body:</p>
+			<table>
+				<thead>
+					<tr><td class="col-40 left">Resistance Granted</td><td>AC Value</td></tr>
+				</thead>
+				<tr><td class="left">Non-Magical</td><td>20</td></tr>
+				<tr><td class="left">Fire</td><td>19</td></tr>
+				<tr><td class="left">Cold</td><td>18</td></tr>
+				<tr><td class="left">Lightning</td><td>17</td></tr>
+				<tr><td class="left">Thunder</td><td>16</td></tr>
+				<tr><td class="left">Acid</td><td>15</td></tr>
+			</table>
+
+			<h4>DISCIDIA</h4>
+			<p>Discidia is the constellation of pain, granting the user a bump in their attacks, as well as making them more of a dangerous attacker.</p>
+			<h5>DANGEROUS BEING</h5>
+			<p>When you choose this attunement at 3rd level, from now on you may double your Strength or Dexterity damage bonus on proficient weapons whenever you strike.</p>
+			<h5>DOUBLE OR NOTHING</h5>
+			<p>Starting at 6th level, you may add an additional damage die to your proficient weapons.</p>
+			<h5>DISTANCE MASTER</h5>
+			<p>Starting at 9th level, your distance with ranged and thrown weapons is increased by half of the original range.</p>
+			<h5>RIGHT BACK AT YA!</h5>
+			<p>Starting at 13th level, each time you take damage as a reaction, roll a d20. On a 19 or 20, half the damage you took gets reflected back at the opponent.</p>
+			<h5>DEADLY STRIKES</h5>
+			<p>Starting at 17th level, you are a master of striking your enemy. Each time you strike with your proficient weapon, the enemy has vulnerability applied (Immune makes an enemy resistant, resistant makes an enemy take flat damage, no resistance makes an enemy vulnerable, a vulnerable enemy cannot be more vulnerable) from the weapon’s damage type. This cannot stack on a creature.</p>
+
+			<h4>EVORSIO</h4>
+			<p>Evorsio is the constellation of destruction, granting the user a bump in their ability to break and manipulate the world around them.</p>
+			<h5>REACHING FAR AND WIDE</h5>
+			<p>When you choose this attunement at 3rd level, from now on you are granted an extra 5ft of reach with melee attacks.</p>
+			<h5>DISARMING STRIKE</h5>
+			<p>Starting at 6th level, you are able to use your superior technique to attempt to disarm an enemy. This is a special disarm attack. The enemy must make a Dexterity saving throw equal to your 10 + Dexterity bonus or be drop what they are holding. You may only attempt this three times in a long rest.</p>
+			<h5>DAMAGE TRANSFER</h5>
+			<p>Starting at 9th level, you are able to deal half the damage you deal on your target to another enemy within 10 feet of you. In order to accomplish this, when you strike a target, you must hit over 5 of the additional target’s armor class to deal the extra damage.</p>
+			<h5>TIPPED SCALES</h5>
+			<p>Starting at 13th level, the lower your health, the more damage you deal. When your HP goes below half and then 10 extra hit points, you add an additional die to your weapon attack. You may only deal this extra damage once per turn. For example, if you have 100 max HP and are below 50 HP:</p>
+			<table>
+				<thead>
+					<tr><td class="col-40 left">Additional Dice</td><td>HP Value</td></tr>
+				</thead>
+				<tr><td class="left">+1</td><td>40</td></tr>
+				<tr><td class="left">+2</td><td>30</td></tr>
+				<tr><td class="left">+3</td><td>20</td></tr>
+				<tr><td class="left">+4</td><td>10</td></tr>
+			</table>
+			<h5>DAMAGE OVER TIME</h5>
+			<p>Starting at 17th level, you become even more deadly each time you strike. Each time you hit an opponent you have already hit before, once per turn, the crit number on the die goes down by one each hit. This has a minimum of 16.</p>
+
+			<h4>VICIO</h4>
+			<p>Vicio is the constellation of movement, granting the user a bump in their speed, as well as giving them ability to gracefully move in the air.</p>
+			<h5>SPEED</h5>
+			<p>When you choose this attunement at 3rd level, from now on your speed is increased by 5ft at each attunement feature (3rd, 6th, 9th, 13th, 17th).</p>
+			<h5>HASTE</h5>
+			<p>Starting at 6th level, you can now haste yourself or another once per long rest.</p>
+			<h5>GRACEFUL WALK</h5>
+			<p>Starting at 9th level, you now slightly hover above the ground, allowing you to ignore difficult terrain. You also ignore stairs, gracefully floating up or down them.</p>
+			<h5>EXTRA ATTACK</h5>
+			<p>Starting at 13th level, you gain another attack during your attack action (total of 3).</p>
+			<h5>FILLED STOMACH</h5>
+			<p>Starting at 17th level, you no longer need to eat. Starlight is your food, and it is constantly in your stomach. This also means you are immune to poison and disease.</p>
+
+			<h3>RITUAL CONSTELLATIONS</h3>
+
+			<h4>AEVITAS</h4>
+			<p>When allies are within the 10ft radius of this ritual, they are healed on your turn for 4d4 + 4 damage.</p>
+			<h4>ARMARA</h4>
+			<p>Non-allies are pushed out of the radius of this ritual which has a radius of 15ft. Creatures attacking the ritual have disadvantage on the attack.</p>
+			<h4>BOOTES</h4>
+			<p>This causes animals to age without killing them, shedding them of their resources within 15ft.</p>
+			<h4>DISCIDIA</h4>
+			<p>This ritual causes non-allies to take damage while they are within the radius of 15ft. The damage is 3d8 psychic when non-allies begin their turn inside the radius.</p>
+			<h4>EVORSIO</h4>
+			<p>This ritual will cause mass destruction, destroying aything within a 20ft radius over time. This ritual will not hurt players, however it will break anything constructed like buildings or natural terrain. The ritual destroys from top to bottom, taking 5 turns to empty out its entire sphere of influence.</p>
+			<h4>HOROLOGIUM</h4>
+			<p>This ritual makes machines work twice their normal speed, causing no additional age or wear. If a construct is inside this radius, they are considered hasted. This ritual has a 15ft radius.</p>
+			<h4>LUCERNA</h4>
+			<p>This ritual functions the same as locate creature or locate object, and the pedestal must be given an item along with the crystal in order to function.</p>
+			<h4>OCTANS</h4>
+			<p>This ritual allows fishing to be done automatically within a 20ft radius. As long as you are in the area, it will function.</p>
+			<h4>VICIO</h4>
+			<p>This ritual allows all creatures within 20ft the ability to increase all movement speed by 15ft, as well as double their high jump.</p>
+
+			<h3>MANTLE OF THE STARS ABILITIES</h3>
+			<p>The Mantle grants the user these abilities:</p>
+			<p>At night, mantles are working at full capacity. However, during the day, only half of the mantle's capacity will be used. This means that any ability a player would like to used will be split in half.</p>
+
+			<h4>AEVITAS</h4>
+			<p>This mantle will allow you to passively heal at the end of your turn a total of 4d4+4 hit points. During the day 2d4+2 hit points.</p>
+			<h4>ARMARA</h4>
+			<p>This mantle will allow you to block an incoming attack up to 3 times, regenerating at the end of your next turn. During the day it can only block 1 attack.</p>
+			<h4>BOOTES</h4>
+			<p>This mantle will allow you to gain flares each time you get hit. On a 15 or higher on a d20, you obtain a flare. On your turn, you may deal an extra 1d8 damage per flare to the target with a melee attack. There is a maximum of three flares and they disappear after a turn of non-use. During the day you must roll an 18 or higher.</p>
+			<h4>DISCIDIA</h4>
+			<p>This mantle will allow you to absorb the damage of a single attack per turn, releasing that damage on top of your own on your next attack. During the day, the damage that can be dealt back is reduced by half.</p>
+			<h4>EVORSIO</h4>
+			<p>This mantle will allow you to deal damage to nearby enemies when you slay another. Upon slaying an enemy, any others within a 15ft radius will take the damage you dealt. During the day, the damage is reduced by half.</p>
+			<h4>HOROLOGIUM</h4>
+			<p>This mantle will allow you to stun enemies that attack you until the end of your next turn. The mantle cannot be used in this way again until the next turn after the enemy is not stunned. During the day, the recharge happens every 12 seconds after the enemy comes out of stun (2 combat turns).</p>
+			<h4>LUCERNA</h4>
+			<p>This mantle will allow you to mark a creature and render them outlined for you and you only. This will give you advantage like faerie fire, and will work behind cover and walls. During the day, this will not work behind cover and walls.</p>
+			<h4>MINERALIS</h4>
+			<p>This mantle will allow you to hold a material, and it will tell you where the closest 4 locations of that material are in the world. During the day, this is reduced to 2.</p>
+			<h4>OCTANS</h4>
+			<p>This mantle will allow you to breathe underwater. During the day, the mantle has no effect.</p>
+			<h4>VICIO</h4>
+			<p>This mantle will allow you fly at a speed of 60ft. During the day, the speed is reduced to 30ft.</p>
+
+			<h3>FAINT CONSTELLATION AUGMENTS</h3>
+			<p>Faint constellations allow you to augment rituals to completely change their effects on the battlefield. Some are good, and some are harmful. Each constellation has their own augments to rituals, so there is an extensive list regarding each augment.</p>
+
+			<h4>AEVITAS</h4>
+			<p>This ritual causes a creature inside its 10ft radius to wither with disease. Every 10 minutes a creature spends inside the radius of this ritual, they will gain a level of exhaustion until death.</p>
+			<h4>ARMARA</h4>
+			<p>This ritual causes enemies to be hasted within the radius, which is 15ft.</p>
+			<h4>BOOTES</h4>
+			<p>This ritual instantly kills any animal or beast CR 2 and below within 15ft.</p>
+			<h4>DISCIDIA</h4>
+			<p>This ritual damages anything in its wake, dealing 4d4+4 psychic damage to any creature within 15ft every turn.</p>
+			<h4>EVORSIO</h4>
+			<p>This ritual works in opposition to its normal counterpart. The 20ft radius sphere of destructioninstead starts terraforming, and creating rock and stone from bottom to top in 5 turns.</p>
+			<h4>HOROLOGIUM</h4>
+			<p>This ritual completely freezes enemies in space and time if they are fully inside the 15ft radius. This will also halt all machines and preserve them in time.</p>
+			<h4>LUCERNA</h4>
+			<p>TThis ritual slows time during the night, causing those inside to experience everything twice as slow around them in a 10ft radius.</p>
+			<h4>OCTANS</h4>
+			<p>This ritual summons water in a 20ft radius sphere around the ritual pedestal instantly.</p>
+			<h4>VICIO</h4>
+			<p>This ritual gives enemies within its 20ft radius the effect of the slow spell.</p>
+
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_CLOCK" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STAR_THRUST" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_ATTUNEMENT" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_SHIFTING_SPACE" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_ASI" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_EXTRAATTACK" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARMETAL" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_RITUAL_PEDESTAL" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MIND_CLEANSE" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_NEBULAE" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_OF_STARS" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARLIGHT_MANAGEMENT" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_CELESTIAL_GATEWAY" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARSHATTER" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_FAINT_STARS" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_FOREVER_STARLIGHT" />
+			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_PILLAR_OF_DEATH" />
+		</description>
+		<sheet display="false">
+			<description>A fighter using the power of the stars.</description>
+		</sheet>
+		<setters>
+			<set name="short">A fighter using the power of the stars.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+			<select type="Proficiency" name="Skill Proficiency (Astral Sorcerer)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_CLOCK" level="1" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STAR_THRUST" level="2" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_ATTUNEMENT" level="3" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_SHIFTING_SPACE" level="4" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" level="4" prepared="true"/>
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_ASI" level="4" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_EXTRAATTACK" level="5" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARMETAL" level="6" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_RITUAL_PEDESTAL" level="7" />
+			<grant type="Spell" id="ID_USER_SPELL_RITUALS" level="7" prepared="true"/>
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MIND_CLEANSE" level="7" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_NEBULAE" level="10" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_CELESTIAL" level="10" prepared="true"/>
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_OF_STARS" level="11" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_CELESTIAL_GATEWAY" level="13" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARSHATTER" level="14" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_FAINT_STARS" level="15" />
+			<grant type="Spell" id="ID_USER_SPELL_RITUAL_AUGMENTS" level="15" prepared="true" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_FOREVER_STARLIGHT" level="17" />
+			<grant type="Class Feature" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_PILLAR_OF_DEATH" level="20" />
+		</rules>
+	</element>
+	<element name="Clock" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_CLOCK">
+		<sheet>
+			<p>You are able to tell the time at any point.</p>
+		</sheet>
+	</element>
+	<element name="Starlight Thrust" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STAR_THRUST">
+		<sheet action = "Bonus Action" usage = "1/Short Rest">
+			<p>You channel the starlight from the sky and wrap it around you to hurl yourself 15ft in a straight line with a brilliant flash of light. This movement does not provoke opportunity attacks. All creatures within 5 feet of the line must succeed on a Constitution saving throw DC = {{star charge:save bonus}}, or be blinded until the end of their next turn. During or after this movement you can make an attack, and the maximum distance you can move is {{star charge:range}}ft.</p>
+		</sheet>
+		<rules>
+			<stat name="star charge:range" value="15"/>
+			<stat name="star charge:range" value="5" level="10"/>
+			<stat name="star charge:range" value="5" level="15"/>
+			<stat name="star charge:range" value="5" level="20"/>
+			<stat name="star charge:save bonus" value="8"/>
+			<stat name="star charge:save bonus" value="wisdom:modifier"/>
+			<stat name="star charge:save bonus" value="proficiency"/>
+		</rules>
+	</element>
+	<element name="Attunement" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_ATTUNEMENT">
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Attunement" supports="Attunement" />
+		</rules>
+	</element>
+	<element name="Shifting Space" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_SHIFTING_SPACE">
+		<sheet action = "Action" usage = "1/Long Rest">
+			<description>
+				<p>You gain the ability to use the stars to mask you in a time of need. This gives you the ability to place mirror image upon yourself.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_ASI">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Astral Sorcerer 4)" supports="Improvement Option,Astral Sorcerer,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Astral Sorcerer 8)" supports="Improvement Option,Astral Sorcerer,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Astral Sorcerer 12)" supports="Improvement Option,Astral Sorcerer,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Astral Sorcerer 16)" supports="Improvement Option,Astral Sorcerer,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Astral Sorcerer 19)" supports="Improvement Option,Astral Sorcerer,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_EXTRAATTACK">
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+	</element>
+	<element name="Starmetal" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARMETAL">
+		<sheet>
+			<description>
+				<p>By allowing a weapon of your choice to be bathed in starlight for an hour, a weapon of your choice now takes on a starry metal infused by the stars, rendering it magical. This can only be done to one weapon at a time.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Ritual Pedestal" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_RITUAL_PEDESTAL">
+		<sheet action = "Action">
+			<description>
+				<p>Rituals take an attuned crystal in order to function. Once the ritual is started, it can be stopped whenever. Rituals can also be destroyed by creatures if they wish to attack it. The ritual will have a total healthpool of 25 hit points, and once destroyed, the crystal can be retrieved but the pedestal must be recrafted. Check your spell list for the rituals you may infuse. The pedestal is made of any wood infused by starlight for an hour, and is about a 6 inch diameter cylinder. The crystal must be reattuned after the ritual being destroyed as well. A crystal must be worth at least 200 gold pieces.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Mind Cleanse" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MIND_CLEANSE">
+		<sheet>
+			<description>Your mind is reinforced with the celestials behind you, granting you advantage on saving throws against charm effects.</description>
+		</sheet>
+	</element>
+	<element name="Nebulae" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_NEBULAE">
+		<sheet action = "Action" usage = "1/Long Rest">
+			<description>You are able to channel your inner self to achieve the feeling and emotion of nebulae floating through deep space. Through this connection, you are now able to use summon celestial once per long rest.</description>
+		</sheet>
+	</element>
+	<element name="Mantle of Stars" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_OF_STARS">
+		<description>
+			<p>At 11th level, each constellation grants an ability to your robe when you advance to learn the mantle of stars. The mantle is considered one of the highest statures amongst Astral Sorcerers, and those who have earned them should be treated with respect, as it is no easy feat.
+			The Mantle of the Stars also grants the wearer a +2 bonus to their armor class, giving them more protection. Once your mantle is attuned, it cannot be attuned again.
+			At night, mantles are working at full capacity. However, during the day, only half of the mantle's capacity will be used. This means that any ability a player would like to used will be split in half.</p>
+			<p>When your mantle takes form, a constellation gets attuned to it in order to give it a specialty. Choose one of the following options. You cannot choose another constellation once you attune your mantle.</p>
+			<h5 class="caption">AEVITAS</h5>
+			<p>This mantle will allow you to passively heal at the end of your turn a total of 4d4+4 hit points. During the day 2d4+2 hit points.</p>
+			<h5 class="caption">ARMARA</h5>
+			<p>This mantle will allow you to block an incoming attack up to 3 times, regenerating at the end of your next turn. During the day it can only block 1 attack.</p>
+			<h5 class="caption">BOOTES</h5>
+			<p>This mantle will allow you to gain flares each time you get hit. On a 15 or higher on a d20, you obtain a flare. On your turn, you may deal an extra 1d8 damage per flare to the target with a melee attack. There is a maximum of three flares and they disappear after a turn of non-use. During the day you must roll an 18 or higher.</p>
+			<h5 class="caption">DISCIDIA</h5>
+			<p>This mantle will allow you to absorb the damage of a single attack per turn, releasing that damage on top of your own on your next attack. During the day, the damage that can be dealt back is reduced by half.</p>
+			<h5 class="caption">EVORSIO</h5>
+			<p>This mantle will allow you to deal damage to nearby enemies when you slay another. Upon slaying an enemy, any others within a 15ft radius will take the damage you dealt. During the day, the damage is reduced by half.</p>
+			<h5 class="caption">HOROLOGIUM</h5>
+			<p>This mantle will allow you to stun enemies that attack you until the end of your next turn. The mantle cannot be used in this way again until the next turn after the enemy is not stunned. During the day, the recharge happens every 12 seconds after the enemy comes out of stun (2 combat turns).</p>
+			<h5 class="caption">LUCERNA</h5>
+			<p>This mantle will allow you to mark a creature and render them outlined for you and you only. This will give you advantage like faerie fire, and will work behind cover and walls. During the day, this will not work behind cover and walls.</p>
+			<h5 class="caption">MINERALIS</h5>
+			<p>This mantle will allow you to hold a material, and it will tell you where the closest 4 locations of that material are in the world. During the day, this is reduced to 2.</p>
+			<h5 class="caption">OCTANS</h5>
+			<p>This mantle will allow you to breathe underwater. During the day, the mantle has no effect.</p>
+			<h5 class="caption">VICIO</h5>
+			<p>This mantle will allow you fly at a speed of 60ft. During the day, the speed is reduced to 30ft.</p>
+		</description>
+		<sheet>
+			<p>Very similar to rituals, each constellation grants an ability when you advance to their mantle of stars. Mantles of the Stars also grants the wearer a +2 bonus to their AC, giving you more protection. At night, mantles are working at full capacity. However, during the day, only half of the mantle's capacity will be used. This means that any ability a player would like to used will be split in half.</p>
+		</sheet>
+		<rules>
+			<stat name="ac:mantle" value="12" />
+			<stat name="ac:mantle" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:mantle" bonus="calculation" equipped="[armor:none]"/>
+			<select type="Class Feature" name="Mantle Constellation" supports="Mantle Constellation,Astral Sorcerer" />
+		</rules>
+	</element>
+	<element name="Aevitas" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_CONSTELLATION_AEVITAS">
+        <supports>Mantle Constellation, Astral Sorcerer</supports>
+        <description>
+            <p>This mantle will allow you to passively heal at the end of your turn a total of 4d4+4 hit points. During the day 2d4+2 hit points.</p>
+        </description>
+        <sheet>
+            <description>This mantle will allow you to passively heal at the end of your turn a total of 4d4+4 hit points. During the day 2d4+2 hit points.</description>
+        </sheet>
+    </element>
+	<element name="Armara" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_CONSTELLATION_ARMARA">
+        <supports>Mantle Constellation, Astral Sorcerer</supports>
+        <description>
+            <p>This mantle will allow you to block an incoming attack up to 3 times, regenerating at the end of your next turn. During the day it can only block 1 attack.</p>
+        </description>
+        <sheet>
+            <description>This mantle will allow you to block an incoming attack up to 3 times, regenerating at the end of your next turn. During the day it can only block 1 attack.</description>
+        </sheet>
+    </element>
+	<element name="Bootes" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_CONSTELLATION_BOOTES">
+        <supports>Mantle Constellation, Astral Sorcerer</supports>
+        <description>
+            <p>This mantle will allow you to gain flares each time you get hit. On a 15 or higher on a d20, you obtain a flare. On your turn, you may deal an extra 1d8 damage per flare to the target with a melee attack. There is a maximum of three flares and they disappear after a turn of non-use. During the day you must roll an 18 or higher.</p>
+        </description>
+        <sheet>
+            <description>This mantle will allow you to gain flares each time you get hit. On a 15 or higher on a d20, you obtain a flare. On your turn, you may deal an extra 1d8 damage per flare to the target with a melee attack. There is a maximum of three flares and they disappear after a turn of non-use. During the day you must roll an 18 or higher.</description>
+        </sheet>
+    </element>
+	<element name="Discidia" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_CONSTELLATION_DISCIDIA">
+        <supports>Mantle Constellation, Astral Sorcerer</supports>
+        <description>
+            <p>This mantle will allow you to absorb the damage of a single attack per turn, releasing that damage on top of your own on your next attack. During the day, the damage that can be dealt back is reduced by half.</p>
+        </description>
+        <sheet>
+            <description>This mantle will allow you to absorb the damage of a single attack per turn, releasing that damage on top of your own on your next attack. During the day, the damage that can be dealt back is reduced by half.</description>
+        </sheet>
+    </element>
+	<element name="Evorsio" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_CONSTELLATION_EVORSIO">
+        <supports>Mantle Constellation, Astral Sorcerer</supports>
+        <description>
+            <p>This mantle will allow you to deal damage to nearby enemies when you slay another. Upon slaying an enemy, any others within a 15ft radius will take the damage you dealt. During the day, the damage is reduced by half.</p>
+        </description>
+        <sheet>
+            <description>This mantle will allow you to deal damage to nearby enemies when you slay another. Upon slaying an enemy, any others within a 15ft radius will take the damage you dealt. During the day, the damage is reduced by half.</description>
+        </sheet>
+    </element>
+	<element name="Horologium" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_CONSTELLATION_HOROLOGIUM">
+        <supports>Mantle Constellation, Astral Sorcerer</supports>
+        <description>
+            <p>This mantle will allow you to stun enemies that attack you until the end of your next turn. The mantle cannot be used in this way again until the next turn after the enemy is not stunned. During the day, the recharge happens every 12 seconds after the enemy comes out of stun (2 combat turns).</p>
+        </description>
+        <sheet>
+            <description>This mantle will allow you to stun enemies that attack you until the end of your next turn. The mantle cannot be used in this way again until the next turn after the enemy is not stunned. During the day, the recharge happens every 12 seconds after the enemy comes out of stun (2 combat turns).</description>
+        </sheet>
+    </element>
+	<element name="Lucerna" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_CONSTELLATION_LUCERNA">
+        <supports>Mantle Constellation, Astral Sorcerer</supports>
+        <description>
+            <p>This mantle will allow you to mark a creature and render them outlined for you and you only. This will give you advantage like faerie fire, and will work behind cover and walls. During the day, this will not work behind cover and walls.</p>
+        </description>
+        <sheet>
+            <description>This mantle will allow you to mark a creature and render them outlined for you and you only. This will give you advantage like faerie fire, and will work behind cover and walls. During the day, this will not work behind cover and walls.</description>
+        </sheet>
+    </element>
+	<element name="Mineralis" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_CONSTELLATION_MINERALIS">
+        <supports>Mantle Constellation, Astral Sorcerer</supports>
+        <description>
+            <p>This mantle will allow you to hold a material, and it will tell you where the closest 4 locations of that material are in the world. During the day, this is reduced to 2.</p>
+        </description>
+        <sheet>
+            <description>This mantle will allow you to hold a material, and it will tell you where the closest 4 locations of that material are in the world. During the day, this is reduced to 2.</description>
+        </sheet>
+    </element>
+	<element name="Octans" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_CONSTELLATION_OCTANS">
+        <supports>Mantle Constellation, Astral Sorcerer</supports>
+        <description>
+            <p>This mantle will allow you to breathe underwater. During the day, the mantle has no effect.</p>
+        </description>
+        <sheet>
+            <description>This mantle will allow you to breathe underwater. During the day, the mantle has no effect.</description>
+        </sheet>
+    </element>
+	<element name="Vicio" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_CONSTELLATION_VICIO">
+        <supports>Mantle Constellation, Astral Sorcerer</supports>
+        <description>
+            <p>This mantle will allow you fly at a speed of 60ft. During the day, the speed is reduced to 30ft.</p>
+        </description>
+        <sheet>
+            <description>This mantle will allow you fly at a speed of 60ft. During the day, the speed is reduced to 30ft.</description>
+        </sheet>
+    </element>
+	<element name="Celestial Gateway" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_CELESTIAL_GATEWAY">
+		<sheet action = "10 minutes" usage = "1/Long Rest">
+			<description>Celestial gateways take 10 minutes to fully deploy, as you have to channel the stars to manifest a physical form of the gateway. Gateways have a range of 100 miles, and will show their destination through a label you magically place on them. No indication of nearby gateways will appear if you place one more than 100 miles away. Two gateways must also be placed to teleport between them.</description>
+		</sheet>
+	</element>
+	<element name="Starshatter" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARSHATTER">
+		<sheet action = "Bonus Action" usage = "1/Short Rest">
+			<description>You gain the ability to begin to channel the stars and overwhelming cosmos into others minds. You may deal a direct 4d6 psychic damage to someone’s mind after an attack using a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Faint Stars" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_FAINT_STARS">
+		<sheet>
+			<description>Your vision expands to see the furthest constellations of the night sky, allowing you to get some extra augments to your rituals. Refer to your spell list for augments.</description>
+		</sheet>
+	</element>
+	<element name="Forever Starlight" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_FOREVER_STARLIGHT">
+		<sheet>
+			<description>You are seen by the stars and celestials alike as almost equal. Due to this, they provide more power to you during the day, meaning your mantle of stars can always function as if it were night.</description>
+		</sheet>
+	</element>
+	<element name="Pillar of Death" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_PILLAR_OF_DEATH">
+		<sheet action = "Action" usage = "1/Long Rest">
+			<description>When you use this ability, you may no longer move on your turn, but summon a 10ft wide pillar of light that is channeled from the heavens as your eyes glow white. You can summon this pillar 60ft from you.
+			TThis pillar causes anyone inside it to have half movement, and when a creature enters the area for the first time on a turn or starts its turn in the pillar, it must make a Wisdom saving throw, equal to {{pillar:save bonus}}. On a failed save, a creature takes 8d10 radiant damage. On a successful save, a creature will take half as much damage. The pillar lasts for one minute, and can only be moved in straight lines up to 15ft.
+			This pillar also takes up your entire turn, meaning you no longer use movement, actions, bonus actions, or reactions.</description>
+		</sheet>
+		<rules>
+			<stat name="pillar:save bonus" value="8"/>
+			<stat name="pillar:save bonus" value="wisdom:modifier"/>
+			<stat name="pillar:save bonus" value="proficiency"/>
+		</rules>
+	</element>
+</elements>

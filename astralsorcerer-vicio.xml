@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="astralsorcerer-vicio.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Vicio" type="Archetype" source="souls" id="ID_USER_ARCHETYPE_ASTRAL_SORCERER_VICIO">
+		<supports>Attunement</supports>
+		<description>
+			<p>Vicio is the constellation of movement, granting the user a bump in their speed, as well as giving them ability to gracefully move in the air.</p>
+			<div element="ID_USER_ARCHETYPE_FEATURE_VICIO_SPEED" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_VICIO_HASTE" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_VICIO_GRACEFUL_WALK" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_VICIO_EXTRAATTACK" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_VICIO_FILLED_STOMACH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_VICIO_SPEED" level="3" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_VICIO_HASTE" level="6" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_VICIO_GRACEFUL_WALK" level="9" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_VICIO_EXTRAATTACK" level="13" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_VICIO_FILLED_STOMACH" level="17" />
+		</rules>
+	</element>
+	<element name="Speed" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_VICIO_SPEED">
+		<description>
+			<p>When you choose this attunement at 3rd level, from now on your speed is increased by 5ft at each attunement feature (3rd, 6th, 9th, 13th, 17th).</p>
+		</description>
+		<sheet>
+			<description>From now on your speed is increased by {{speed:distance}} ft.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:distance" value="5" />
+			<stat name="speed:distance" value="5" level="6" />
+			<stat name="speed:distance" value="5" level="9" />
+			<stat name="speed:distance" value="5" level="13" />
+			<stat name="speed:distance" value="5" level="17" />
+			<stat name="innate speed:misc" value="speed:distance" bonus="base" />
+		</rules>
+	</element>
+	<element name="Haste" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_VICIO_HASTE">
+		<description>
+			<p>Starting at 6th level, you can now haste yourself or another once per long rest.</p>
+		</description>
+		<sheet action = "Action" usage = "1/Long Rest">
+			<description>You can now haste yourself or another once per long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="6" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Graceful Walk" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_VICIO_GRACEFUL_WALK">
+		<description>
+			<p>Starting at 9th level, you now slightly hover above the ground, allowing you to ignore difficult terrain. You also ignore stairs, gracefully floating up or down them.</p>
+		</description>
+		<sheet>
+			<description>You ignore difficult terrain. You also ignore stairs, gracefully floating up or down them.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_VICIO_EXTRAATTACK">
+		<description>
+			<p>Starting at 13th level, you gain another attack during your attack action (total of 3).</p>
+		</description>
+		<sheet>
+			<description>You gain another attack during your attack action (total of 3).</description>
+		</sheet>
+	</element>
+	<element name="Filled Stomach" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_VICIO_FILLED_STOMACH">
+		<description>
+			<p>Starting at 17th level, you no longer need to eat. Starlight is your food, and it is constantly in your stomach. This also means you are immune to poison and disease.</p>
+		</description>
+		<sheet>
+			<description>You no longer need to eat. You are also immune to poison and disease.</description>
+		</sheet>
+	</element>
+</elements>

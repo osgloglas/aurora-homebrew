@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<update version="0.0.4">
+			<file name="items-weapons.xml" url="" />
+		</update>
+	</info>
+	
+	<!-- Guns -->
+	<element name="Sniper Rifle" type="Weapon" source="souls" id="ID_USER_DMG_WEAPON_SNIPER_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">300/1200</set>
+			<set name="damage" type="piercing">2d12</set>
+			<set name="proficiency">ID_USER_DMG_PROFICIENCY_WEAPON_MODERN_FIREARMS_SNIPER_RIFLE</set>
+			<set name="reload">1</set>
+			<!-- <set name="ammunition">ID_WOTC_DMG_ITEM_BULLET_MODERN</set> -->
+		</setters>
+	</element>
+
+	<element name="Scythe of Indominus" type="Weapon" source="souls" id="ID_USER_WEAPON_SCYTHEOFINDOMINUS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="10">10 lbs.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE</set>
+		</setters>
+	</element>
+
+	<element name="Miniglaive" type="Weapon" source="souls" id="ID_USER_WEAPON_MINIGLAIVE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">18</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
+		</setters>
+	</element> 
+</elements>

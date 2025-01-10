@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of Kung Fu</name>
+		<update version="0.0.1">
+			<file name="way-of-kung-fu.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Way of Kung Fu" type="Archetype" source="souls" id="ID_USER_ARCHETYPE_MONK_WAYOFKUNGFU">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>You’ve made a pact with a deathless being, a creature that defies the cycle and life and death, forsaking its mortal shell so it might eternally pursue its unfathomable ambitions. For such beings, time and morality are fleeting things, the concerns of those for whom grains of sand still rush through life’s hourglass. Having once been mortal themselves, these ancient undead know firsthand the paths of ambition and the routes past the doors of death. They eagerly share this profane knowledge, along with other secrets, with those who work their will among the living.</p>
+			<p class="indent">Beings of this type include the demilich Acererak, the vampire tyrant Kas the Bloody-Handed, the githyanki lich-queen Vlaakith, the dracolich Dragotha, the undead pharaoh Ankhtepot, and the elusive Darklord, Azalin Rex.</p>
+			<div element="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_WUXIFINGERHOLD" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_INNERPEACE" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_HARDENBODY" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_TORNADOSPIN" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_SHOCKWAVE" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_GOLDENLOTUSCLAP" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_SILKENMOONTOUCH" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_FIREBALL" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_SPELL" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_HARDENBODY" level="3" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_WUXIFINGERHOLD" level="4" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_SPELL" level="5" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_FIREBALL" level="5" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_INNERPEACE" level="6" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_GOLDENLOTUSCLAP" level="7" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_SILKENMOONTOUCH" level="10" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_TORNADOSPIN" level="12" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_SHOCKWAVE" level="12" />
+		</rules>
+	</element>
+
+	<element name="Harden Body" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_HARDENBODY">
+		<description>
+			<p>You have gained the ability through your training to deflect a melee strike using your body. Spending a KI point will allow your body to cushion a strike to it, similar to your deflect missiles feature.</p>
+		</description>
+		<sheet action="Rection" usage="Ki">
+			<description>You can deflect or catch a blow when you are hit by a melee attack. When you do so, the damage you take from the attack is reduced by 1d10+{{monk:deflect missiles bonus}}.</description>
+		</sheet>
+	</element>
+	
+	<element name="Wuxi Finger Hold" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_WUXIFINGERHOLD">
+		<description>
+			<p>You have gained the ability through your training to perform the Wuxi Finger Hold. This hold has some limitations:</p>
+			<ul>
+				<li>cannot be used on a creature that does not have fingers.</li>
+				<li>cannot be used on a creature that is from the outer planes of existence.</li>
+				<li>can only be used once per short/long rest</li>
+			</ul>
+			<p class="indent">This hold creates a blast that can be heard in a 300ft radius, causing its target 3d10 force damage, and banishing the creature to the spiritual realm. Like banishment, you must concentrate for one minute in order for the creature to be completely banished. This goes up by 1d10 per 4 levels.</p>
+		</description>
+		<sheet action="Action" usage="3 Ki/Short Rest/Long Rest">
+			<description>You can perform the Wuxi Finger Hold on a creature. &#13;
+			• When the hold is performed, 3d10 force damage to the target is taken. &#13;
+			• 1 d10 is added every 4 monk levels (4d10 at level 8, 5d10 at level 12, 6d10 at level 16, and 6d10 at level 20). &#13;
+			• This cannot be used on creatures without fingers, or if the creature is from the outer planes of existence.</description>
+		</sheet>
+	</element>
+
+	<element name="Spell" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_SPELL">
+		<description>
+			<p>For the fireball spell specifically, ignore the "At Higher Levels:" section, for you as a monk, your spell damage scales with your leveling. Every 3 levels of monk, you get to add another d6 of damage to fireball.</p>
+		</description>
+		<sheet>
+			<description>For the fireball spell specifically, ignore the "At Higher Levels:" section, for you as a monk, your spell damage scales with your leveling. Every 3 levels of monk, you get to add another d6 of damage to fireball.</description>
+		</sheet>
+	</element>
+
+	<element name="Fireball" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_FIREBALL">
+		<description>
+			<p>Through watching spell casters and training yourself in a new way, you can now cast the fireball spell with a special hand motion on an action of your turn.</p>
+		</description>
+		<sheet action="Action" usage="2 Ki/Short Rest/Long Rest">
+			<description>Through watching spell casters and training yourself in a new way, you can now cast the fireball spell with a special hand motion.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
+		</rules>
+	</element>
+
+	<element name="Inner Peace" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_INNERPEACE">
+		<description>
+			<p>Your connection to yourself now flows within your body, making you able to deflect missiles of larger sizes as a reaction. You can deflect up to an object 4 feet in diameter.</p>
+			<p class="indent">Any object you deflect will not hit you, and you can spend an additional Ki point to throw it back at a target.</p>
+		</description>
+		<sheet action="Reaction" usage="2 Ki">
+			<description>Your connection to yourself now flows within your body, making you able to deflect missiles of larger sizes. You can deflect up to an object 4 feet in diameter. &#13;
+			Any object you deflect will not hit you, and you can spend an additional Ki point to throw it back at a target.</description>
+		</sheet>
+	</element>
+
+	<element name="Golden Lotus Clap" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_GOLDENLOTUSCLAP">
+		<description>
+			<p>You now have the ability to cast the blindness spell with a certain hand motion and a clap of your hands as a bonus action. Once this technique is done, a small blast of golden energy eminates from you, and your target will be blinded.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Ki">
+			<description>You now have the ability to cast the blindness spell with a certain hand motion and a clap of your hands. Once this technique is done, a small blast of golden energy eminates from you, and your target will be blinded.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" />
+		</rules>
+	</element>
+
+	<element name="Silken Moon Touch" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_SILKENMOONTOUCH">
+		<description>
+			<p>You now have the ability to do a special hand motion, and then upon touching a creature, a large blast follows with a blue haze in a 30ft radius sphere as a bonus action. The damage caused by this blast is 4d8 bludgeoning damage, adding a d8 per monk level. This does affect flying creatures.</p>
+		</description>
+		<sheet action="Bonus Action" usage="2 Ki">
+			<description>You now have the ability to do a special hand motion, and then upon touching a creature, a large blast follows with a blue haze in a 30ft radius sphere. The damage caused by this blast is 4d8 bludgeoning damage, adding a d8 per monk level. This does affect flying creatures.</description>
+		</sheet>
+	</element>
+
+	<element name="Tornado Spin" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_TORNADOSPIN">
+		<description>
+			<p>You start to learn more advanced techniques in your training, trying to make yourself more powerful. Resulting of this is a technique where you channel your energy and spin through the air, causing a cyclone to form around you in a 30ft vertical cone.</p>
+			<p class="indent">At the start of your turn, this cyclone does 5d10 slashing damage, adding a d10 per 2 monk levels, to any creature inside it. This includes party members. The cyclone ends when your turn is over.</p>
+		</description>
+		<sheet action="Action/Movement" usage="2 Ki/2 Per Long Rest">
+			<description>You start to learn more advanced techniques in your training, trying to make yourself more powerful. Resulting of this is a technique where you channel your energy and spin through the air, causing a cyclone to form around you in a 30ft vertical cone. &#13;
+			At the start of your turn, this cyclone does 5d10 slashing damage, adding a d10 per 2 monk levels, to any creature inside it. This includes party members. The cyclone ends when your turn is over.</description>
+		</sheet>
+	</element>
+
+	<element name="Shockwave" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_MONK_WAYOFKUNGFU_SHOCKWAVE">
+		<description>
+			<p>You start to learn more advanced techniques in your training, trying to make yourself more powerful. Resulting of this is a technique where you channel your energy and jump through the air and slam your fist/weapon into the ground.</p>
+			<p class="indent">Using this move will also tie into your movement. The damage taken to every creature (including party members) is 6d8 force damage, adding a d8 per monk level.</p>
+		</description>
+		<sheet action="Action/Movement" usage="2 Ki/2 Per Long Rest">
+			<description>You start to learn more advanced techniques in your training, trying to make yourself more powerful. Resulting of this is a technique where you channel your energy and jump through the air and slam your fist/weapon into the ground. &#13;
+			Using this move will also tie into your movement. The damage taken to every creature (including party members) is 6d8 force damage, adding a d8 per monk level.</description>
+		</sheet>
+	</element>
+</elements>

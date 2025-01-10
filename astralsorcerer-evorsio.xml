@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="astralsorcerer-evorsio.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Evorsio" type="Archetype" source="souls" id="ID_USER_ARCHETYPE_ASTRAL_SORCERER_EVORSIO">
+		<supports>Attunement</supports>
+		<description>
+			<p>Evorsio is the constellation of destruction, granting the user a bump in their ability to break and manipulate the world around them.</p>
+			<div element="ID_USER_ARCHETYPE_FEATURE_EVORSIO_REACHING_FAR_AND_WIDE" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_EVORSIO_DISARMING_STRIKE" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_EVORSIO_DAMAGE_TRANSFER" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_EVORSIO_TIPPED_SCALES" />
+			<div element="ID_USER_ARCHETYPE_FEATURE_EVORSIO_DAMAGE_OVER_TIME" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_EVORSIO_REACHING_FAR_AND_WIDE" level="3" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_EVORSIO_DISARMING_STRIKE" level="6" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_EVORSIO_DAMAGE_TRANSFER" level="9" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_EVORSIO_TIPPED_SCALES" level="13" />
+			<grant type="Archetype Feature" id="ID_USER_ARCHETYPE_FEATURE_EVORSIO_DAMAGE_OVER_TIME" level="17" />
+		</rules>
+	</element>
+	<element name="Reaching Far and Wide" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_EVORSIO_REACHING_FAR_AND_WIDE">
+		<description>
+			<p>When you choose this attunement at 3rd level, from now on you are granted an extra 5ft of reach with melee attacks.</p>
+		</description>
+		<sheet>
+			<description>Your melee attacks now have a range of 10ft.</description>
+		</sheet>
+	</element>
+	<element name="Disarming Strike" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_EVORSIO_DISARMING_STRIKE">
+		<description>
+			<p>Starting at 6th level, you are able to use your superior technique to attempt to disarm an enemy. The enemy must make a saving throw equal to 10 + Dexterity bonus or be disarmed. You may only attempt this three times in a short rest.</p>
+		</description>
+		<sheet action = "Bonus Action" usage = "3/Long Rest">
+			<description>You are able to use your superior technique to attempt to disarm an enemy. The enemy must make a saving throw equal to {{disarm:save bonus}} or be disarmed.</description>
+		</sheet>
+		<rules>
+			<stat name="disarm:save bonus" value="10"/>
+			<stat name="disarm:save bonus" value="dexterity:modifier"/>
+		</rules>
+	</element>
+	<element name="Damage Transfer" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_EVORSIO_DAMAGE_TRANSFER">
+		<description>
+			<p>Starting at 9th level, you are able to deal half the damage you deal on your target to another enemy within 10 feet of you. In order to accomplish this, when you strike a target, you must hit over 5 of the additional target’s armor class to deal the extra damage.</p>
+		</description>
+		<sheet>
+			<description>You are able to attempt to deal half the damage you deal to another enemy within 10 feet of you. When you strike a target, you must hit over 5 of the additional target's armor class to deal the extra damage.</description>
+		</sheet>
+	</element>
+	<element name="Tipped Scales" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_EVORSIO_TIPPED_SCALES">
+		<description>
+			<p>Starting at 13th level, the lower your health, the more damage you deal. Each time your HP goes below half and then 10 hit points, you add an additional die to your weapon attack. For example, if you have 50 HP:</p>
+			<table>
+				<thead>
+					<tr><td class="col-40 left">Additional Dice</td><td>HP Value</td></tr>
+				</thead>
+				<tr><td class="left">+1</td><td>40</td></tr>
+				<tr><td class="left">+2</td><td>30</td></tr>
+				<tr><td class="left">+3</td><td>20</td></tr>
+				<tr><td class="left">+4</td><td>10</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Each time your HP goes below half and then 10 additional hit points, you add an additional die to your weapon attack. Refer to the table in your attunement description.</description>
+		</sheet>
+	</element>
+	<element name="Damage Over Time" type="Archetype Feature" source="souls" id="ID_USER_ARCHETYPE_FEATURE_EVORSIO_DAMAGE_OVER_TIME">
+		<description>
+			<p>Starting at 17th level, you become even more deadly each time you strike. Each time you hit an opponent you have already hit before, once per turn, the crit number on the die goes down by one each hit. This has a minimum of 16.</p>
+		</description>
+		<sheet>
+			<description>Each time you hit an opponent you have already hit before, once per turn, the crit number on the die goes down by one each hit. This has a minimum of 16.</description>
+		</sheet>
+	</element>
+</elements>
