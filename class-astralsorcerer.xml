@@ -307,7 +307,6 @@
 			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MIND_CLEANSE" />
 			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_NEBULAE" />
 			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_OF_STARS" />
-			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARLIGHT_MANAGEMENT" />
 			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_CELESTIAL_GATEWAY" />
 			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARSHATTER" />
 			<div element="ID_USER_CLASS_FEATURE_ASTRALSORCERER_FAINT_STARS" />
@@ -357,7 +356,7 @@
 	</element>
 	<element name="Starlight Thrust" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STAR_THRUST">
 		<sheet action = "Bonus Action" usage = "1/Short Rest">
-			<p>You channel the starlight from the sky and wrap it around you to hurl yourself 15ft in a straight line with a brilliant flash of light. This movement does not provoke opportunity attacks. All creatures within 5 feet of the line must succeed on a Constitution saving throw DC = {{star charge:save bonus}}, or be blinded until the end of their next turn. During or after this movement you can make an attack, and the maximum distance you can move is {{star charge:range}}ft.</p>
+			<p>You to hurl yourself 15ft in a straight line. This movement does not provoke opportunity attacks, and all creatures within 5 feet of the line must succeed on a Constitution saving throw DC = {{star charge:save bonus}}, or be blinded until the end of their next turn. During or after this movement you can make an attack, and the maximum distance you can move is {{star charge:range}}ft.</p>
 		</sheet>
 		<rules>
 			<stat name="star charge:range" value="15"/>
@@ -378,7 +377,7 @@
 	<element name="Shifting Space" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_SHIFTING_SPACE">
 		<sheet action = "Action" usage = "1/Long Rest">
 			<description>
-				<p>You gain the ability to use the stars to mask you in a time of need. This gives you the ability to place mirror image upon yourself.</p>
+				<p>You can place mirror image upon yourself.</p>
 			</description>
 		</sheet>
 	</element>
@@ -398,31 +397,31 @@
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_EXTRAATTACK">
 		<sheet>
-			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
 		</sheet>
 	</element>
 	<element name="Starmetal" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARMETAL">
 		<sheet>
 			<description>
-				<p>By allowing a weapon of your choice to be bathed in starlight for an hour, a weapon of your choice now takes on a starry metal infused by the stars, rendering it magical. This can only be done to one weapon at a time.</p>
+				<p>By allowing a weapon of your choice to be bathed in starlight for an hour, a weapon of your choice now becomes made of starmetal, rendering it magical. This can only be done to one weapon at a time.</p>
 			</description>
 		</sheet>
 	</element>
 	<element name="Ritual Pedestal" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_RITUAL_PEDESTAL">
 		<sheet action = "Action">
 			<description>
-				<p>Rituals take an attuned crystal in order to function. Once the ritual is started, it can be stopped whenever. Rituals can also be destroyed by creatures if they wish to attack it. The ritual will have a total healthpool of 25 hit points, and once destroyed, the crystal can be retrieved but the pedestal must be recrafted. Check your spell list for the rituals you may infuse. The pedestal is made of any wood infused by starlight for an hour, and is about a 6 inch diameter cylinder. The crystal must be reattuned after the ritual being destroyed as well. A crystal must be worth at least 200 gold pieces.</p>
+				<p>Rituals take an attuned crystal in order to function. Once started, it can be stopped whenever. Rituals can also be destroyed by creatures if they wish to attack it, having a total healthpool of 25 hit points. Once destroyed, the crystal can be retrieved but the pedestal must be recrafted. Check your spell list for the rituals you may infuse. The pedestal is made of any wood infused by starlight for an hour, and the crystal must be reattuned after the ritual being destroyed. A crystal must be worth at least 200 gold pieces.</p>
 			</description>
 		</sheet>
 	</element>
 	<element name="Mind Cleanse" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MIND_CLEANSE">
 		<sheet>
-			<description>Your mind is reinforced with the celestials behind you, granting you advantage on saving throws against charm effects.</description>
+			<description>You now have advantage on saving throws against charm effects.</description>
 		</sheet>
 	</element>
 	<element name="Nebulae" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_NEBULAE">
 		<sheet action = "Action" usage = "1/Long Rest">
-			<description>You are able to channel your inner self to achieve the feeling and emotion of nebulae floating through deep space. Through this connection, you are now able to use summon celestial once per long rest.</description>
+			<description>You are now able to use summon celestial spell.</description>
 		</sheet>
 	</element>
 	<element name="Mantle of Stars" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_MANTLE_OF_STARS">
@@ -453,7 +452,7 @@
 			<p>This mantle will allow you fly at a speed of 60ft. During the day, the speed is reduced to 30ft.</p>
 		</description>
 		<sheet>
-			<p>Very similar to rituals, each constellation grants an ability when you advance to their mantle of stars. Mantles of the Stars also grants the wearer a +2 bonus to their AC, giving you more protection. At night, mantles are working at full capacity. However, during the day, only half of the mantle's capacity will be used. This means that any ability a player would like to used will be split in half.</p>
+			<p>Each constellation grants an ability when you advance to the mantle of the stars. Mantles of the Stars also grants the wearer a +2 bonus to their AC, giving you more protection. At night, mantles work at full capacity. However, during the day, only half of the mantle's capacity will be used. These effects are described below:</p>
 		</sheet>
 		<rules>
 			<stat name="ac:mantle" value="12" />
@@ -554,12 +553,12 @@
     </element>
 	<element name="Celestial Gateway" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_CELESTIAL_GATEWAY">
 		<sheet action = "10 minutes" usage = "1/Long Rest">
-			<description>Celestial gateways take 10 minutes to fully deploy, as you have to channel the stars to manifest a physical form of the gateway. Gateways have a range of 100 miles, and will show their destination through a label you magically place on them. No indication of nearby gateways will appear if you place one more than 100 miles away. Two gateways must also be placed to teleport between them.</description>
+			<description>Celestial gateways take 10 minutes to deploy, have a range of 100 miles, and will show their destination through a label you magically place on them. No indication of nearby gateways will appear if you place one more than 100 miles away. Two gateways must also be placed to teleport between them.</description>
 		</sheet>
 	</element>
 	<element name="Starshatter" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_STARSHATTER">
 		<sheet action = "Bonus Action" usage = "1/Short Rest">
-			<description>You gain the ability to begin to channel the stars and overwhelming cosmos into others minds. You may deal a direct 4d6 psychic damage to someone’s mind after an attack using a bonus action.</description>
+			<description>You may deal a direct 4d6 psychic damage to someone’s mind after an attack using a bonus action.</description>
 		</sheet>
 	</element>
 	<element name="Faint Stars" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_FAINT_STARS">
@@ -573,10 +572,11 @@
 		</sheet>
 	</element>
 	<element name="Pillar of Death" type="Class Feature" source="souls" id="ID_USER_CLASS_FEATURE_ASTRALSORCERER_PILLAR_OF_DEATH">
-		<sheet action = "Action" usage = "1/Long Rest">
-			<description>When you use this ability, you may no longer move on your turn, but summon a 10ft wide pillar of light that is channeled from the heavens as your eyes glow white. You can summon this pillar 60ft from you.
-			TThis pillar causes anyone inside it to have half movement, and when a creature enters the area for the first time on a turn or starts its turn in the pillar, it must make a Wisdom saving throw, equal to {{pillar:save bonus}}. On a failed save, a creature takes 8d10 radiant damage. On a successful save, a creature will take half as much damage. The pillar lasts for one minute, and can only be moved in straight lines up to 15ft.
-			This pillar also takes up your entire turn, meaning you no longer use movement, actions, bonus actions, or reactions.</description>
+		<sheet action = "Entire Turn" usage = "1/Long Rest">
+			<description>When you use this ability, you may no longer move, take actions, or use reactions on your turn, but summon a 10ft wide pillar of light within 60ft of you.
+			This pillar causes anyone inside it to have half movement, and when a creature enters the area for the first time on a turn or starts its turn in the pillar, it must make a Wisdom saving throw equal to {{pillar:save bonus}}.
+			On a failed save, a creature takes 8d10 radiant damage. On a successful save, a creature will take half as much damage. The pillar lasts for one minute, and can only be moved in straight lines up to 15ft.
+			</description>
 		</sheet>
 		<rules>
 			<stat name="pillar:save bonus" value="8"/>

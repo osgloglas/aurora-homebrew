@@ -38,6 +38,7 @@
 		<description>
 			<p>You allow plants around you to grow and bloom. You also gain access to the druidcraft cantrip.</p>
 		</description>
+		<sheet display = "false" />
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" level="6" prepared="true"/>
 		</rules>
