@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kitsune</name>
+		<description>The shifty creatures of the Kitsune</description>
+		<author url="">soulsandstormer</author>
+		<update version="0.0.3">
+			<file name="race-kitsune.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Kitsune" type="Race" source="souls" id="ID_USER_RACE_KITSUNE">
+		<description>
+			<p class="flavor">In some campaigns, humanoids normally regarded as sinister threats can emerge to adventure alongside humans and the other standard races. This section is aimed at those who wish to expand the race selections for their campaigns beyond the typical folk of D&amp;D.</p>
+			<h4>KITSUNE TRAITS</h4>
+			<p>Your kitsune has the following racial traits.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span>Your Charisma score increases by 2, and your Dexterity score increases by 1.<br/>
+				<span class="feature">Age.</span>Kitsune mature at the same rate as elves (much longer than humans) and have lifespans similar in length to theirs. <br/>
+				<span class="feature">Size.</span>Purebloods match humans in average size and weight. Your size is Medium. When you are in fox form, you are considered small.<br/>
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet. When you are in fox form, your movement speed is 40ft.<br/>
+				<span class="feature">Truesight.</span>You can see with truesight within 30 feet of you. You have learned to control this vision to only use it when needed, to not hinder your normal vision.<br/>
+				<span class="feature">Magic Resistance.</span>You have advantage on saving throws against spells and other magical effects.<br/>
+				<span class="feature">Psychic Resistance.</span>You are resistant to psychic damage.<br/>
+				<span class="feature">Languages.</span>You can speak, read, and write Common. You can speak with beasts fluently as long as they can speak back.<br/>
+				<span class="feature">Alternate Form.</span>You can transform twice a day into a much smaller fox form. This form allows you to still speak and do everything as normal, however the form takes on whatever hair color you have.<br/>
+			</p>				
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Kitsune)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Kitsune)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_USER_RACIAL_TRAIT_KITSUNE_TRUESIGHT" />
+			<grant type="Racial Trait" id="ID_USER_RACIAL_TRAIT_KITSUNE_MAGIC_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_USER_RACIAL_TRAIT_KITSUNE_PSYCHIC_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_USER_RACIAL_TRAIT_KITSUNE_ALTERNATE_FORM"/>
+		</rules>
+	</element>
+
+	<element name="Truesight" type="Racial Trait" source="souls" id="ID_USER_RACIAL_TRAIT_KITSUNE_TRUESIGHT">
+		<description>
+			<p>You can see with truesight within 30 feet of you. You have learned to control this vision to only use it when needed, to not hinder your normal vision.</p>
+		</description>
+		<sheet>
+			<description><strong>(3/Short Rest)</strong> You are able to use truesight at a range of 30ft. for 10 minutes.</description>
+		</sheet>
+	</element>
+	<element name="Magic Resistance" type="Racial Trait" source="souls" id="ID_USER_RACIAL_TRAIT_KITSUNE_MAGIC_RESISTANCE">
+		<description>
+			<p>You have advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>	 
+	<element name="Psychic Resistance" type="Racial Trait" source="souls" id="ID_USER_RACIAL_TRAIT_KITSUNE_PSYCHIC_RESISTANCE">
+		<description>
+			<p>You are resistant to psychic damage.</p>
+		</description>
+		<sheet>
+			<description>You are resistant to psychic damage.</description>
+		</sheet>
+	</element>
+	<element name="Alternate Form" type="Racial Trait" source="souls" id="ID_USER_RACIAL_TRAIT_KITSUNE_ALTERNATE_FORM">
+		<description>
+			<p>You can transform twice a day into a much smaller fox form. This form allows you to still speak and do everything as normal, however the form takes on whatever hair color you have.</p>
+		</description>
+		<sheet>
+			<description><strong>(2/Long Rest)</strong> You can transform twice a day into a much smaller fox form. This form allows you to still speak and do everything as normal (except wield weapons), however the form takes on whatever hair color you have. Your movement speed becomes 40ft.</description>
+		</sheet>
+	</element>
+</elements>

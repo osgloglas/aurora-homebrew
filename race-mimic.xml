@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mimic</name>
+		<update version="0.1.0">
+			<file name="race-mimic.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Mimic" type="Race" source="souls" id="ID_RACE_MIMIC">
+		<description>
+			<p class="flavor">Mimics upon being looked upon are strange and hostile creatures to everyone in the world. A mimic is frowned upon in many places, which is why they love to be disguised as something else. In their purest form, mimics are furnishing objects with mouths and eyes, a creation from an unknown place.</p>
+			<h4>MIMIC CREATION</h4>
+			<p>Mimics are derived from a type of magic used on furnishings to make them hostile. However, some mimics become sentient and decide to leave the place they were created. Many mimics have a wooden or metal construct to their body, with their mouth full of sharp teeth. Their eyes are sunken into the body of them, and is sometimes hard to notice.</p>
+			<h4>SENTIENT AND STEALTHY</h4>
+			<p>Mimics are found mostly in human cities or towns, where they grow up to be extremely still and silent, and often learn to steal from people.</p>
+			<p class="indent">Lacking a homeland, mimics know that they have to make their own way in the world and that they have to be strong to survive. Although mimics are sentient, they do not often get attached to people. However, under the right circumstances, mimics will get extremely attached to someone who is helpful or advantageous to them.</p>
+			<h4>MIMIC NAMES</h4>
+			<p>Mimic names fall into one category. Mimics who are created by someone are usually never given names, they give a name to themselves.</p>
+			<ul class="unstyled">
+				<li><strong>Mimic Names:</strong>Any name they have seen or heard out in the world that they love.</li>
+			</ul>
+			<h4>MIMIC TRAITS</h4>
+			<p>Mimics share certain racial traits as a result of their construction.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1, and your Constitustion score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Mimics are hard to say what age they live up to, some live forever.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Mimics are neutral, as they do not abide to anyone, unless they have a very close companion. Mimics are also chaotic, as they love to steal and attack things due to the way they are concieved.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Mimics are about the same size as a normal piece of furniture. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Thanks to your magical makeup, you are provided with darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Hardened Resistance.</em></strong> You have resistance to force and bludgeoning damage.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="mimic">Any name they have seen or heard out in the world that they love.</set>
+			<set name="names-format">{{name}} “{{virtue}}”</set>
+			<set name="height" modifier="2d8">4'9"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HARDENED_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MIMIC_ATTACK" />
+		</rules>
+	</element>
+	<element name="Hardened Resistance" type="Racial Trait" source="souls" id="ID_RACIAL_TRAIT_HARDENED_RESISTANCE">
+		<description>
+			<p>You have resistance to acid damage and are immune to being knocked prone.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to acid damage and are immune to being knocked prone.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_IMMUNITY_PRONE" /> 
+		</rules>
+	</element>
+	<element name="Mimic Attack" type="Racial Trait" source="souls" id="ID_RACIAL_TRAIT_MIMIC_ATTACK">
+		<description>
+			<p>You have an ability as a mimic to put enemies of your size or smaller inside your mouth, grappeling and restraining them. You also are able to do a melee bite attack, dealing either 1d6 bludgeoning damage or 1d8 piercing/acid damage.</p>
+		</description>
+		<sheet>
+			<description>You have an ability as a mimic to put enemies of your size or smaller inside your mouth, grappeling and restraining them. You also are able to do a melee bite attack, dealing either 1d6 bludgeoning damage or 1d8 piercing/acid damage.</description>
+		</sheet>
+	</element>
+</elements>
