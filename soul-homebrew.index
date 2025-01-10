@@ -9,6 +9,20 @@
 		</update>
 	</info>
 	<files>
+		<file name="class-astralsorcerer.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/class-astralsorcerer.xml" />
+		<file name="astralsorcerer-resources.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/astralsorcerer-resources.xml" />
+		<file name="astralsorcerer-aevitas.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/astralsorcerer-aevitas.xml" />
+		<file name="astralsorcerer-armara.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/astralsorcerer-armara.xml" />
+		<file name="astralsorcerer-discidia.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/astralsorcerer-discidia.xml" />
+		<file name="astralsorcerer-evorsio.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/astralsorcerer-evorsio.xml" />
+		<file name="astralsorcerer-vicio.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/astralsorcerer-vicio.xml" />
+
 		<file name="race-cannon-cart-warforged.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/race-cannon-cart-warforged.xml" />
+
+		<file name="way-of-kung-fu.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/way-of-kung-fu.xml" />
+
+		<file name="feats.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/feats.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/spells.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/osgloglas/aurora-homebrew/refs/heads/main/items-weapons.xml" />
 	</files>
 </index>
